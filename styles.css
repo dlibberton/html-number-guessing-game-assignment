@@ -1,11 +1,88 @@
 /* styles.css */
 body {
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
+  margin: 0; 
+  padding: 0; 
+  background-color: #a6b0be; 
+  color: #333;
+  line-height: 1.6;
 }
 
-h1 {
-  font-weight: 400
+h1.game-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3em; 
+    color: #201e42; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  h1.game-title:hover {
+    animation: bounce 0.5s infinite alternate; 
+  }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin-bottom: 8px;
+}
+li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+ul.clean-list {
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+ul.clean-list {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-container {
+  max-width: 400px;
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #917171; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px; 
+  color: #333; 
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+.form-submit {
+  width: 100%; 
+  padding: 10px; 
+  background-color: #ff4500; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.form-submit:hover {
+  background-color: #ff6a36;
+}

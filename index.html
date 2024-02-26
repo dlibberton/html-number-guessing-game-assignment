@@ -4,16 +4,22 @@
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
+      <h1 class="game-title">Let's Play the Guessing Number Game!</h1>
     </nav>
-
-
+      <form id="guessForm" onsubmit="addGuess(event)">
+        <input class="form-input" name="guess" id="guessInput" type="number" placeholder="Enter Guess Here" />
+        <input class="form-input" type="submit" />    
+      </form>
+      <p id="result"></p>
+      <h2>Guesses</h2>
+      <ul class="clean-list" id="guessContainer">
+      </ul>
   </body>
 </html>
